@@ -1,8 +1,46 @@
 $body-bg: #F3F1FF;
+$pink: #E05CC4;
+$teal: #369C84;
+$aqua: #3399C5;
+
+$frontend: $pink;
+$backend: $teal;
+$other: $aqua;
 
 @import "~bootstrap/scss/bootstrap";
 
 h1 {
   font-family: 'ZillaSlab';
   font-weight: bold;
+}
+
+.btn-frontend, .btn-backend, .btn-other {
+  color: $white;
+  font-family: 'ZillaSlab';
+  font-weight: bold;
+}
+
+.btn-frontend {
+  background-color: $frontend;
+}
+
+.btn-backend {
+  background-color: $backend;
+}
+
+.btn-other {
+  background-color: $other;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+
+  .btn {
+    flex-grow: 1;
+  }
+
+  .btn + .btn {
+    margin-left: 1rem;
+  }
 }
