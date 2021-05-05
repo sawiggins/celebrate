@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 WebFontLoader.load({
   google: {
     families: [
-      'ZillaSlab:400,700,latin-ext',
+      'Zilla Slab:400,700,latin-ext',
     ]
   }
 })

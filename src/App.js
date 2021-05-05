@@ -1,9 +1,11 @@
-import './App.css';
+import React from 'react'
+
 import {Button, Col, Container, Form, Row} from 'react-bootstrap'
 
-const App = () => (
+const App = () => {
+return (
   <Container className="App">
-    <Row className="hero flex-column">
+    <Row className="hero flex-column text-center">
       <h1>Celebration Board</h1>
       <h4>Learns &amp; Wins, Big &amp; Small</h4>
       <Col md={{span: 6, offset: 3}}>
@@ -20,6 +22,6 @@ const App = () => (
       </Col>
     </Row>
   </Container>
-)
+)}
 
 export default App;
