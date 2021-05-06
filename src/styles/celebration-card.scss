@@ -1,0 +1,15 @@
+.celebration-card {
+  background-color: $other;
+  padding: 1rem;
+  
+  .card-title, .card-subtitle {
+    color: $white;
+    font-family: 'Zilla Slab';
+    text-align: center;
+  }
+
+  .card-subtitle {
+    font-size: 14px;
+    margin-top: 0.5rem;
+  }
+}

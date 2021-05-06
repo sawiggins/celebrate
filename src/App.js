@@ -1,6 +1,7 @@
 import React from 'react'
-
 import {Button, Col, Container, Form, Row} from 'react-bootstrap'
+
+import CelebrationCard from './CelebrationCard.js'
 
 const App = () => {
 return (
@@ -23,6 +24,25 @@ return (
       </Col>
       <div className="wavy-bottom"></div>
     </Row>
+  </Container>
+  <Container>
+    <div className="card-columns">
+      <CelebrationCard 
+        title="Live coded for the first time at Code Connector’s Coding Dojo event. Live coded for the first time at Code Connector’s Coding Dojo event."
+      />
+      <CelebrationCard 
+        title="Live coded for the first time at Code Connector’s Coding Dojo event."
+      />
+      <CelebrationCard 
+        title="Live coded for the first time at Code Connector’s Coding Dojo event."
+      />
+      <CelebrationCard 
+        title="Live coded for the first time at Code Connector’s Coding Dojo event."
+      />
+      <CelebrationCard 
+        title="Live coded for the first time at Code Connector’s Coding Dojo event."
+      />
+    </div>
   </Container>
   </div>
 )}
