@@ -2,12 +2,14 @@ $body-bg: #F3F1FF;
 $pink: #E05CC4;
 $teal: #369C84;
 $aqua: #3399C5;
+$purple: #233A87;
 
 $frontend: $pink;
 $backend: $teal;
 $other: $aqua;
 
 @import "~bootstrap/scss/bootstrap";
+@import "./wavy.scss";
 
 h1 {
   font-family: 'Zilla Slab';
@@ -32,6 +34,14 @@ h1 {
   background-color: $other;
 }
 
+.hero {
+  background-color: #3D449C;
+
+  h1, h4 {
+    color: $white;
+  }
+}
+
 .filters {
   display: flex;
   justify-content: space-between;
@@ -44,3 +54,5 @@ h1 {
     margin-left: 1rem;
   }
 }
+
+@import 'wavy.scss';
