@@ -21,18 +21,31 @@ h1 {
   color: $white;
   font-family: 'Zilla Slab';
   font-weight: bold;
+
+  &:hover {
+    color: $white;
+  }
 }
 
 .btn-frontend {
   background-color: $frontend;
+  &:hover {
+    background-color: saturate($frontend, 20%);
+  }
 }
 
 .btn-backend {
   background-color: $backend;
+  &:hover {
+    background-color: saturate($backend, 25%);
+  }
 }
 
 .btn-other {
   background-color: $other;
+  &:hover {
+    background-color: saturate($other, 25%);
+  }
 }
 
 .hero {
