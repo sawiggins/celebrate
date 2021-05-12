@@ -9,6 +9,8 @@ WebFontLoader.load({
   google: {
     families: [
       'Zilla Slab:400,700,latin-ext',
+      'Roboto: 400, latin-ext',
+      'Roboto Mono: 400, latin-ext',
     ]
   }
 })

@@ -28,27 +28,41 @@ return (
   <Container>
     <div className="card-columns">
       <CelebrationCard 
-        title="Live coded for the first time at Code Connector’s Coding Dojo event. Live coded for the first time at Code Connector’s Coding Dojo event."
-        category="backend"
-      />
-      <CelebrationCard 
-        title="Live coded for the first time at Code Connector’s Coding Dojo event."
+        title="Published a new version on an npm package."
+        date="05/04/2021"
         category="frontend"
+        description="npm publish"
+        isDescriptionCode={true}
       />
       <CelebrationCard 
-        title="Live coded for the first time at Code Connector’s Coding Dojo event."
+        title="Learned about recursion."
+        date="04/23/2021"
         category="other"
+        description="Take a function/method and passs it to itself again."
+        isDescriptionCode={false}
       />
       <CelebrationCard 
-        title="Live coded for the first time at Code Connector’s Coding Dojo event."
-        category="frontend"
-      />
-      <CelebrationCard 
-        title="Live coded for the first time at Code Connector’s Coding Dojo event."
+        title="Add to database using Rails console .new and .create methods."
+        date="05/02/2021"
         category="backend"
+        description="Model.new + Model.save(validation: true/false)
+        Model.create (will run validations)"
+        isDescriptionCode={true}
+      />
+      <CelebrationCard 
+        title="Lightbulb on bootstrap override placements."
+        date="05/05/2021"
+        category="frontend"
+        description='$variable-name: value;
+        import bootstrap  
+        h1 {
+          value-to-change: value;
+        }'
+        isDescriptionCode={true}
       />
       <CelebrationCard 
         title="Live coded for the first time at Code Connector’s Coding Dojo event."
+        date="04/03/2021"
         category="other"
       />
     </div>

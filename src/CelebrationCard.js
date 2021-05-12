@@ -1,13 +1,18 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-const CelebrationCard = ({title, category}) => {
+const CelebrationCard = ({title, category, date, description, isDescriptionCode}) => {
+  {/* TODO: CLEAN UP, ONLY PASS IF TRUE */}
+  const isDescriptionCodeClass = isDescriptionCode ? "code" : false
   return (
-    <Card className={`celebration-card ${category}`} >
-      <Card.Body>
+    <Card className='celebration-card' >
+      <Card.Header className={`${category}`}>
         <Card.Title>{title}</Card.Title>
-        <Card.Subtitle>04/27/2021</Card.Subtitle>
-      </Card.Body>
+        <Card.Subtitle>{date}</Card.Subtitle>
+      </Card.Header>
+      {description && <Card.Body>
+        <Card.Text className={`${isDescriptionCodeClass}`}>{description}</Card.Text>
+      </Card.Body>}
     </Card>
   )
 }
