@@ -1,7 +1,18 @@
 .celebration-card {
-  background-color: $other;
   padding: 1rem;
+
+  &.frontend {
+    background-color: $frontend;
+  }
+
+  &.backend {
+    background-color: $backend;
+  }
   
+  &.other {
+    background-color: $other;
+  }
+
   .card-title, .card-subtitle {
     color: $white;
     font-family: 'Zilla Slab';

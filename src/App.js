@@ -29,18 +29,27 @@ return (
     <div className="card-columns">
       <CelebrationCard 
         title="Live coded for the first time at Code Connector’s Coding Dojo event. Live coded for the first time at Code Connector’s Coding Dojo event."
+        category="backend"
       />
       <CelebrationCard 
         title="Live coded for the first time at Code Connector’s Coding Dojo event."
+        category="frontend"
       />
       <CelebrationCard 
         title="Live coded for the first time at Code Connector’s Coding Dojo event."
+        category="other"
       />
       <CelebrationCard 
         title="Live coded for the first time at Code Connector’s Coding Dojo event."
+        category="frontend"
       />
       <CelebrationCard 
         title="Live coded for the first time at Code Connector’s Coding Dojo event."
+        category="backend"
+      />
+      <CelebrationCard 
+        title="Live coded for the first time at Code Connector’s Coding Dojo event."
+        category="other"
       />
     </div>
   </Container>
