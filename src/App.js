@@ -49,13 +49,13 @@ const App = () => {
   const [filteredCelebrationCards, setFilteredCelebrationCards] = useState(celebrationCards);
 
   const filteredToRender = filteredCelebrationCards.map((card) => (
-      <CelebrationCard 
-        title={card.title}
-        date={card.date}
-        category={card.category}
-        description={card.description}
-        isDescriptionCode={card.isDescriptionCode}
-      />
+    <CelebrationCard 
+      title={card.title}
+      date={card.date}
+      category={card.category}
+      description={card.description}
+      isDescriptionCode={card.isDescriptionCode}
+    />
   ));
 
   const frontend = celebrationCards.filter(card => card.category === 'frontend')
@@ -95,7 +95,7 @@ const App = () => {
           <Button variant='frontend' onClick={() => filterFrontend()}>Frontend</Button>
           <Button variant='backend' onClick={() => filterBackend()}>Backend</Button>
           <Button variant='other' onClick={() => filterOther()}>Other</Button>
-          <Button onClick={() => removeFilter()}>All</Button>
+          <Button variant='primary-dark' onClick={() => removeFilter()}>All</Button>
         </div>
       </Col>
       <div className="wavy-bottom"></div>

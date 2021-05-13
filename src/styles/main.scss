@@ -17,7 +17,7 @@ h1 {
   font-weight: bold;
 }
 
-.btn-frontend, .btn-backend, .btn-other {
+.btn {
   color: $white;
   font-family: 'Zilla Slab';
   font-weight: bold;
@@ -45,6 +45,15 @@ h1 {
   background-color: $other;
   &:hover {
     background-color: saturate($other, 25%);
+  }
+}
+
+.btn-primary-dark {
+  background-color: darken($purple, 15%);
+  border: $white;
+
+  &:hover {
+    background-color: darken($purple, 25%);
   }
 }
 
