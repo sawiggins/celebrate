@@ -61,21 +61,31 @@ const App = () => {
   const frontend = celebrationCards.filter(card => card.category === 'frontend')
   const backend = celebrationCards.filter(card => card.category === 'backend')
   const other = celebrationCards.filter(card => card.category === 'other')
+  
+  const search = (e) => {
+    const searchParam = e.target.value
+    if (searchParam != '') {
+      const searchResults = celebrationCards.filter(card => {
+        return card.title.includes(searchParam)
+      });
+      setFilteredCelebrationCards(searchResults)
+    } else
+    setFilteredCelebrationCards(celebrationCards)
+  }
 
-
-  function filterFrontend() {
+  const filterFrontend = () => {
     setFilteredCelebrationCards(frontend)
   }
 
-  function filterBackend() {
+  const filterBackend = () => {
     setFilteredCelebrationCards(backend)
   }
 
-  function filterOther() {
+  const filterOther = () => {
     setFilteredCelebrationCards(other)
   }
 
-  function removeFilter() {
+  const removeFilter = () => {
     setFilteredCelebrationCards(celebrationCards);
   }
   
@@ -88,7 +98,7 @@ const App = () => {
       <Col md={{span: 6, offset: 3}}>
         <Form className="mt-3">
           <Form.Group>
-            <Form.Control type="text" placeholder="search..."></Form.Control>
+            <Form.Control type="text" placeholder="search..." onChange={search}></Form.Control>
           </Form.Group>
         </Form>
         <div className="filters">
@@ -104,44 +114,6 @@ const App = () => {
   <Container>
     <div className="card-columns">
       {filteredToRender}
-      {/* <CelebrationCard 
-        title="Published a new version on an npm package."
-        date="05/04/2021"
-        category="frontend"
-        description="npm publish"
-        isDescriptionCode={true}
-      />
-      <CelebrationCard 
-        title="Learned about recursion."
-        date="04/23/2021"
-        category="other"
-        description="Take a function/method and passs it to itself again."
-        isDescriptionCode={false}
-      />
-      <CelebrationCard 
-        title="Add to database using Rails console .new and .create methods."
-        date="05/02/2021"
-        category="backend"
-        description="Model.new + Model.save(validation: true/false)
-        Model.create (will run validations)"
-        isDescriptionCode={true}
-      />
-      <CelebrationCard 
-        title="Lightbulb on bootstrap override placements."
-        date="05/05/2021"
-        category="frontend"
-        description='$variable-name: value;
-        import bootstrap  
-        h1 {
-          value-to-change: value;
-        }'
-        isDescriptionCode={true}
-      />
-      <CelebrationCard 
-        title="Live coded for the first time at Code Connector’s Coding Dojo event."
-        date="04/03/2021"
-        category="other"
-      /> */}
     </div>
   </Container>
   </div>
